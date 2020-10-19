@@ -1,9 +1,6 @@
 public class Child2 extends Parent implements Printable {
     private String name;
 
-    public String getName() {
-        return name;
-    }
 
     public Child2 (String name, String MaleOrFemale){
         super(MaleOrFemale);
@@ -12,6 +9,7 @@ public class Child2 extends Parent implements Printable {
     }
     @Override
     public void print() {
+        super.print();
         System.out.println("Name: " + name);
 
     }

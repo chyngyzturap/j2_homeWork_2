@@ -1,15 +1,12 @@
-public class Parent {
+public class Parent implements Printable{
     private String maleOrFemale;
-
-    public String getMaleOrFemale() {
-        return maleOrFemale;
-    }
-
-    public void setMaleOrFemale(String maleOrFemale) {
-        this.maleOrFemale = maleOrFemale;
-    }
 
     public Parent (String maleOrFemale){
         this.maleOrFemale = maleOrFemale;
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Sex: " + maleOrFemale);
     }
 }
