@@ -7,6 +7,6 @@ public class Parent implements Printable{
 
     @Override
     public void print() {
-        System.out.println("Sex: " + maleOrFemale);
+        System.out.println(this.getClass().getSimpleName() + "\nSex: " + maleOrFemale);
     }
 }

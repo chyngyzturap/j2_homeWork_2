@@ -10,7 +10,7 @@ public class Child2 extends Parent implements Printable {
     @Override
     public void print() {
         super.print();
-        System.out.println("Name: " + name);
+        System.out.println("Name: " + name  + "\n_______");
 
     }
 }
