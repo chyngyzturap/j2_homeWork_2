@@ -10,12 +10,22 @@ public class Main {
         createObject((String) Child3);
     }
 
-    public static void createObject (String className) throws Exception {
+    /*public static void createObject (String className) throws Exception {
         switch (className) {
             case "Child1" -> new Child1(7);
             case "Child2" -> new Child2("Timur");
             case "Child3" -> new Child3(176);
-            default -> new Child3(177);
+            default -> throw new RuntimeException("Wrong Class", new RuntimeException());
         }
+    }*/
+
+    public static Printable createObject (String className) {
+        Printable printable = null;
+        switch (className) {
+            case "Child1" -> new Child1(7);
+            case "Child2" -> new Child2("Timur");
+            case "Child3" -> new Child3(176);
+        }
+        return printable;
     }
 }
