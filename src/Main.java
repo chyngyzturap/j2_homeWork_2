@@ -15,7 +15,7 @@ public class Main {
             case "Child1" -> new Child1(7);
             case "Child2" -> new Child2("Timur");
             case "Child3" -> new Child3(176);
-            default -> throw new RuntimeException("Wrong Class", new RuntimeException());
+            default -> new Child3(177);
         }
     }
 }
