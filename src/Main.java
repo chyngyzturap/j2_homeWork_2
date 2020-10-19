@@ -1,8 +1,13 @@
 public class Main {
 
-    public static void main(String[] args) {
+    private static Object Child1;
+    private static Object Child2;
+    private static Object Child3;
 
-
+    public static void main(String[] args) throws Exception {
+        createObject((String) Child1);
+        createObject((String) Child2);
+        createObject((String) Child3);
     }
 
     public static void createObject (String className) throws Exception {

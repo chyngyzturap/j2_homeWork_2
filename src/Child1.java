@@ -1,8 +1,11 @@
 public class Child1 extends Parent implements Printable{
     private int age;
 
+    public int getAge() {
+        return age;
+    }
+
     public Child1(int age) {
-        super(yearOfBirth);
         this.age = age;
     }
 
