@@ -5,7 +5,8 @@ public class Child1 extends Parent implements Printable{
         return age;
     }
 
-    public Child1(int age) {
+    public Child1(int age, String maleOrFemale) {
+        super(maleOrFemale);
         this.age = age;
     }
 
