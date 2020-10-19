@@ -6,6 +6,7 @@ public class Child3 extends Parent implements Printable{
     }
 
     public Child3(int height){
+        super(maleOrFemale);
         this.height = height;
     }
 
